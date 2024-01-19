@@ -81,7 +81,7 @@ def total_sales(sales_data):
     """
     print("Tallying your sales for the period...\n")
     time.sleep(1)
-    print(f"Your sales for the period: {sum(sales_data)}")
+    sum_sales = print(f"Your sales for the period: {sum(sales_data)}")
     time.sleep(1)
 
 def get_labour_data():
@@ -141,8 +141,59 @@ def average_labour(labour_data):
     """
     print("Tallying your labour for the period...\n")
     time.sleep(1)
-    print(f"Your labour for the period: {statistics.mean(labour_data)}")
+    mean_labour = print(f"Your labour for the period: {statistics.mean(labour_data)}")
     time.sleep(1)
+
+def calculate_bonus(labour_data, sales_data):
+    """
+    Calculates percentage of bonus, must hit labour target to achieve bonus.
+    Max bonus is 1% of sales.
+    """
+    print("Please answer these questions correctly to total your bonus.")
+    bonus_deductions = 0
+    time.sleep(1)
+    training_input = input("Is all online training completed?(Y/N): ")
+    if training_input == "N":
+        bonus_deductions += 1
+    time.sleep(1)
+    complaints_input = input("Are complaints lower than 1.2/1000 orders?(Y/N): ")
+    if complaints_input == "N":
+        bonus_deductions += 1
+    time.sleep(1)
+    insurance_input = input("If/All insurance claims filled out?(Y/N): ")
+    if insurance_input == "N":
+        bonus_deductions += 1
+    time.sleep(1)
+    gps_input = input("Is GPS usage greater than or equal to 95%?(Y/N): ")
+    if gps_input == "N":
+        bonus_deductions += 1
+    time.sleep(1)
+
+    if statistics.mean(labour_data) > 21.0:
+        print("Sorry you haven't hit your bonus :(")
+    elif bonus_deductions == 0:
+        total_bonus = sum(sales_data) * 0.01
+        print(f"Your total bonus is {total_bonus}!")
+    elif bonus_deductions == 1:
+        total_bonus = sum(sales_data) * 0.0075
+        print(f"Your total bonus is {total_bonus}!")
+    elif bonus_deductions == 2:
+        total_bonus = sum(sales_data) * 0.005
+        print(f"Your total bonus is {total_bonus}!")
+    elif bonus_deductions == 3:
+        total_bonus = sum(sales_data) * 0.0025
+        print(f"Your total bonus is {total_bonus}!")
+    elif bonus_deductions == 4:
+        total_bonus = sum(sales_data) * 0.01
+        print("Sorry you haven't hit your bonus :(")
+
+    
+    
+
+        
+        
+
+    
 
 
 def main():
@@ -154,6 +205,8 @@ def main():
     total_sales(sales_data)
     update_labour_worksheet(labour_data)
     average_labour(labour_data)
+    calculate_bonus(labour_data, sales_data)
+
 
 
 print("Welcome to your bonus calculator!\n")
