@@ -37,6 +37,8 @@ def get_period_sales():
             print("Weekly Sales data valid :)")
             break
 
+    return sales_data
+
 
 def validate_sales(values):
     """
@@ -56,8 +58,22 @@ def validate_sales(values):
 
     return True
 
+
+def update_sales_worksheet(data):
+    """
+    Update sales worksheet, add new row with the list data provided.
+    """
+    time.sleep(1)
+    print("Updating sales worksheet...\n")
+    time.sleep(1)
+    sales_worksheet = SHEET.worksheet("sales")
+    sales_worksheet.append_row(data)
+    print("Sales worksheet updated successfully. \n")
+
 def main():
-    get_period_sales()
+    data = get_period_sales()
+    sales_data = [int(num) for num in data]
+    update_sales_worksheet(sales_data)
 
 
 print("Welcome to your bonus calculator!\n")
