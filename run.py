@@ -17,6 +17,10 @@ sales = SHEET.worksheet('sales')
 
 data = sales.get_all_values()
 
+labour = SHEET.worksheet('labour')
+
+labour_data = labour.get_all_values()
+
 def get_period_sales():
     """
     Ask the user for the weekly sales during the period.
@@ -77,13 +81,67 @@ def total_sales(sales_data):
     print("Tallying your sales for the period...\n")
     time.sleep(1)
     print(f"Your sales for the period: {sum(sales_data)}")
+    time.sleep(1)
+
+def get_labour_data():
+    while True:
+        print("Please enter each weeks total labour.\n")
+        time.sleep(1)
+        print("4 Weeks of labour must be inputted, seperated by commas\n")
+        time.sleep(1)
+        print("For Example: 21.5,22.9,27.8,21.1\n")
+        time.sleep(1)
+
+        labour_input = input("Enter your weekly labour here:\n")
+
+        labour_data = labour_input.split(",")
+
+        if validate_labour(labour_data):
+            print("Weekly labour data valid :)")
+            break
+
+    return labour_data
+
+
+def validate_labour(values):
+    """
+    Converts strings into integers and raises an error if strings
+    won't convert into int and/or if there isnt 4 values.
+    """
+
+    try:
+        [int(value) for value in values]
+        if len(values) != 4:
+            raise ValueError(
+                f"Exaclty 4 values required, you provided {len(values)}"
+            )
+    except ValueError as e:
+        print(f"Invalid data: {e}, please try again. \n")
+        return False
+
+    return True
+
+
+def update_labour_worksheet(labour_data):
+    """
+    Update sales worksheet, add new row with the list data provided.
+    """
+    time.sleep(1)
+    print("Updating labour worksheet...\n")
+    time.sleep(1)
+    labour_worksheet = SHEET.worksheet("labour")
+    labour_worksheet.append_row(labour_data)
+    print("Labour worksheet updated successfully. \n")
 
 
 def main():
     data = get_period_sales()
     sales_data = [int(num) for num in data]
+    ldata = get_labour_data()
+    labour_data = [int(num) for num in ldata]
     update_sales_worksheet(sales_data)
     total_sales(sales_data)
+    update_labour_worksheet(labour_data)
 
 
 print("Welcome to your bonus calculator!\n")
