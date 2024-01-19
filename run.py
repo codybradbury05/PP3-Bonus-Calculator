@@ -1,6 +1,7 @@
 import gspread
 from google.oauth2.service_account import Credentials
 import time
+import statistics
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -134,6 +135,16 @@ def update_labour_worksheet(labour_data):
     print("Labour worksheet updated successfully. \n")
 
 
+def average_labour(labour_data):
+    """
+    Adds each weekly labour to tally a total labour.
+    """
+    print("Tallying your labour for the period...\n")
+    time.sleep(1)
+    print(f"Your labour for the period: {statistics.mean(labour_data)}")
+    time.sleep(1)
+
+
 def main():
     data = get_period_sales()
     sales_data = [int(num) for num in data]
@@ -142,6 +153,7 @@ def main():
     update_sales_worksheet(sales_data)
     total_sales(sales_data)
     update_labour_worksheet(labour_data)
+    average_labour(labour_data)
 
 
 print("Welcome to your bonus calculator!\n")
