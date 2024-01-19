@@ -70,10 +70,20 @@ def update_sales_worksheet(data):
     sales_worksheet.append_row(data)
     print("Sales worksheet updated successfully. \n")
 
+def total_sales(sales_data):
+    """
+    Adds each weekly sale to tally a total sales.
+    """
+    print("Tallying your sales for the period...\n")
+    time.sleep(1)
+    print(f"Your sales for the period: {sum(sales_data)}")
+
+
 def main():
     data = get_period_sales()
     sales_data = [int(num) for num in data]
     update_sales_worksheet(sales_data)
+    total_sales(sales_data)
 
 
 print("Welcome to your bonus calculator!\n")
