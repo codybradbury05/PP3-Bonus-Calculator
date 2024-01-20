@@ -116,7 +116,7 @@
 
 ### Other Tests
 
-- I checked to see if this deployed to heroku, which can be seen [Here](assets/images/bonusinitalscreen.PNG)
+- I checked to see if this deployed to heroku, which can be seen [Here](assets/images/bonusinitalscreen.PNG).
 - I checked to see if the terminal was responsive. ![ResponsiveMockup](assets/images/bonusresponsive.PNG)
 - I also checked lighthouse to see if the terminal met the standards.![Lighthousetesting](assets/images/bonuslighthouse.PNG)
 
@@ -133,11 +133,16 @@ In the future I would be able to add the folowing:
 
 ### Deployment
 
+## Technologies
+
+- Python
+- To run - "python3 run.py"
+
 ## GitHub
 
 - The steps to deploy are as follows:
-  - In the GitHub repository, navigate to the Settings tab
-  - From the source section drop-down menu, select the Master Branch
+  - In the GitHub repository, navigate to the Settings tab.
+  - From the source section drop-down menu, select the Master Branch.
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 ## Heroku Deployment
@@ -147,38 +152,38 @@ In the future I would be able to add the folowing:
     - Select create new app.
     - Enter a name for your app.
     - Choose your region either USA or EU.
-    - Click on "Create app"
-    - To link a google sheets:
-        - Settings
-        - Config Vars
+    - Click on "Create app".
+    - To link a google sheets:.
+        - Settings.
+        - Config Vars.
         - Enter "CREDS" then enter the data in the downloaded file you recieve when you setup your googlesheets API.
-        - Enter "PORT" and value as "8000"
-    - Click Deploy
-    - Select Deploy from GitHub
-    - Enter github name exaclty
-    - Connect
+        - Enter "PORT" and value as "8000".
+    - Click Deploy.
+    - Select Deploy from GitHub.
+    - Enter github name exaclty.
+    - Connect.
     - Then click deploy manually.
 
 ## Setup a Google API
 
 - Steps to setup a Google API are as follows:
-    - Log in
-    - Create a new google sheets
-    - Use the same name as your app.
-    - Go to [Google Cloud APIs](https://cloud.google.com/apis)
-    - Click on API manager
-    - Create a new project and name it
-    - Click on Credentials
-    - Enable "Google Drive API" and "Google Sheets API"
-    - Go to your Google Drive API, create new credentials
+    - Log in.
+    - Create a new google sheets.
+    - Use the same name as your app..
+    - Go to [Google Cloud APIs](https://cloud.google.com/apis).
+    - Click on API manager.
+    - Create a new project and name it.
+    - Click on Credentials.
+    - Enable "Google Drive API" and "Google Sheets API".
+    - Go to your Google Drive API, create new credentials.
     - Enter your name, an email will then generate.
-    - Select the role as Project > Editor
-    - Click on the newly created account
-    - Create a Key
-    - Create JSON Private key
+    - Select the role as Project > Editor.
+    - Click on the newly created account.
+    - Create a Key.
+    - Create JSON Private key.
     - Recieve the JSON File.
-    - Copy the JSON into the workspace
-    - Take the email from the JSON and share it into your google sheet
+    - Copy the JSON into the workspace.
+    - Take the email from the JSON and share it into your google sheet.
     - run "pip3 install gspread" in the terminal.
 
 ### Credits
@@ -193,4 +198,4 @@ In the future I would be able to add the folowing:
 
 ## Time Module Python
 
-- Helped me delay the running of the program to allow for a better user experience[python.org](https://docs.python.org/3/library/time.html)
+- Helped me delay the running of the program to allow for a better user experience.[python.org](https://docs.python.org/3/library/time.html)
