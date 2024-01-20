@@ -26,3 +26,27 @@
 - Display to newer or less knowledgeable managers how a bonus is calculated.
 - Allow the user to easily work their way throught the calculator.
 - The user to return everytime they want to calculate their bonus.
+
+## Features/Design
+### Walkthrough
+
+- On inital run of the program, you're prompted to enter sales data along with a set of instructions. Please note that the data used here is dummy data and not real data.
+[HERE](assets/images/bonusinitalscreen.PNG)
+
+- After entering a correct data set, you will recieve feedback stating that your data is valid.
+[HERE](assets/images/bonusp1.PNG)
+
+- Then you will be prompted to enter labour data with a set of instructions.
+[HERE](assets/images/bonusp2.PNG)
+
+- After entering a correct labour data set, you will recieve feedback that your data is valid.
+[HERE](assets/images/bonuslabourvalid.PNG)
+
+- Furthermore, you're total sales will be tallied then your labour will be averaged and displayed to you.
+[HERE](assets/images/bonusp3.PNG)
+
+- You will then be prompted to answer 4 Y/N questions which will help calculate your bonus.
+[HERE](assets/images/bonusp4.PNG)
+
+- Finally, your bonus will be display to you.
+[HERE](assets/images/bonusp5.PNG)
