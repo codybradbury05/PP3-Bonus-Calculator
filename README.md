@@ -190,7 +190,7 @@ In the future I would be able to add the following:
 
 ## Code Institute
 
-- Love Sandwiches Walkthrough for helping me with my validation and adding to a Google sheet. [Love Sandwiches](https://github.com/Code-Institute-Solutions/love-sandwiches-p5-sourcecode)
+- Love Sandwiches Walkthrough for helping me with my validation and adding to a Google sheet and the deployment terminal. [Love Sandwiches](https://github.com/Code-Institute-Solutions/love-sandwiches-p5-sourcecode)
 
 ## TabletoMarkdown
 
@@ -198,4 +198,4 @@ In the future I would be able to add the following:
 
 ## Time Module Python
 
-- Helped me delay the running of the program to allow for a better user experience.[python.org](https://docs.python.org/3/library/time.html)
+- Helped me delay the running of the program to allow for a better user experience. [python.org](https://docs.python.org/3/library/time.html)
