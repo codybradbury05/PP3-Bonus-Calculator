@@ -104,7 +104,7 @@
 
 ## 5. Testing
 
-#### 5.1 Manual testing
+#### Manual testing
 
 | Test Num | Test                                                              | Expected Result                                                                                                  | Correct Outcome |
 | -------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | --------------- |
@@ -113,3 +113,9 @@
 | 3        | Enter valid labour data.                                          | Enter 4 integers, which should return validation from the terminal.                                              | Yes             |
 | 4        | Enter invalid labour data.                                        | Enter 4 integers/strings incorrectly, which should return an error message and ask to reinput data.              | Yes             |
 | 5        | Answer Y/N to different questions and receive the correct result. | Enter Y/N to different questions and receive the correct amount of bonus in comparison to the answered questions | Yes             |
+
+### Other Tests
+
+- I checked to see if this deployed to heroku, which can be seen [Here](assets/images/bonusinitalscreen.PNG)
+- I checked to see if the terminal was responsive. ![ResponsiveMockup](assets/images/bonusresponsive.PNG)
+- I also checked lighthouse to see if the terminal met the standards.![Lighthousetesting](assets/images/bonuslighthouse.PNG)
