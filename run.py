@@ -45,7 +45,6 @@ def get_period_sales():
 
     return sales_data
 
-
 def validate_sales(values):
     """
     Converts strings into integers and raises an error if strings
@@ -63,7 +62,6 @@ def validate_sales(values):
         return False
 
     return True
-
 
 def update_sales_worksheet(data):
     """
@@ -104,7 +102,6 @@ def get_labour_data():
 
     return labour_data
 
-
 def validate_labour(values):
     """
     Converts strings into integers and raises an error if strings
@@ -123,7 +120,6 @@ def validate_labour(values):
 
     return True
 
-
 def update_labour_worksheet(labour_data):
     """
     Update sales worksheet, add new row with the list data provided.
@@ -134,7 +130,6 @@ def update_labour_worksheet(labour_data):
     labour_worksheet = SHEET.worksheet("labour")
     labour_worksheet.append_row(labour_data)
     print("Labour worksheet updated successfully. \n")
-
 
 def average_labour(labour_data):
     """
@@ -188,16 +183,10 @@ def calculate_bonus(labour_data, sales_data):
         total_bonus = sum(sales_data) * 0.01
         print("Sorry you haven't hit your bonus :(")
 
-    
-    
-
-        
-        
-
-    
-
-
 def main():
+    """
+    Runs all functions on call.
+    """
     data = get_period_sales()
     sales_data = [int(num) for num in data]
     ldata = get_labour_data()
@@ -207,8 +196,6 @@ def main():
     update_labour_worksheet(labour_data)
     average_labour(labour_data)
     calculate_bonus(labour_data, sales_data)
-
-
 
 print("Welcome to your bonus calculator!\n")
 
