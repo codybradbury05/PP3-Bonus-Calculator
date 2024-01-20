@@ -166,7 +166,7 @@ In the future I would be able to add the following:
 
 ## Setup a Google API
 
-The steps to set up a Google API are as follows:
+- The steps to set up a Google API are as follows:
     - Log in.
     - Create a new Google sheet.
     - Use the same name as your app.
