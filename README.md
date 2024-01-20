@@ -130,3 +130,53 @@ In the future I would be able to add the folowing:
 - Ability to create a full spreadsheet that display all information about their bonus,sales,labour for managers.
 - Create a GUI for a more enhanced user experience.
 - Be able to stop the code without having to run through it.
+
+### Deployment
+
+## GitHub
+
+- The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+## Heroku Deployment
+
+- Steps to deploy in Heroku are as follows:
+    - Log in.
+    - Select create new app.
+    - Enter a name for your app.
+    - Choose your region either USA or EU.
+    - Click on "Create app"
+    - To link a google sheets:
+        - Settings
+        - Config Vars
+        - Enter "CREDS" then enter the data in the downloaded file you recieve when you setup your googlesheets API.
+        - Enter "PORT" and value as "8000"
+    - Click Deploy
+    - Select Deploy from GitHub
+    - Enter github name exaclty
+    - Connect
+    - Then click deploy manually.
+
+## Setup a Google API
+
+- Steps to setup a Google API are as follows:
+    - Log in
+    - Create a new google sheets
+    - Use the same name as your app.
+    - Go to [Google Cloud APIs](https://cloud.google.com/apis)
+    - Click on API manager
+    - Create a new project and name it
+    - Click on Credentials
+    - Enable "Google Drive API" and "Google Sheets API"
+    - Go to your Google Drive API, create new credentials
+    - Enter your name, an email will then generate.
+    - Select the role as Project > Editor
+    - Click on the newly created account
+    - Create a Key
+    - Create JSON Private key
+    - Recieve the JSON File.
+    - Copy the JSON into the workspace
+    - Take the email from the JSON and share it into your google sheet
+    - run "pip3 install gspread" in the terminal.
