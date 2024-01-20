@@ -84,6 +84,9 @@ def total_sales(sales_data):
     time.sleep(1)
 
 def get_labour_data():
+    """
+    Ask the user for the weekly labour during the period.
+    """
     while True:
         print("Please enter each weeks total labour.\n")
         time.sleep(1)
