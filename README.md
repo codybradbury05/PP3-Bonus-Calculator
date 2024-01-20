@@ -31,22 +31,35 @@
 ### Walkthrough
 
 - On inital run of the program, you're prompted to enter sales data along with a set of instructions. Please note that the data used here is dummy data and not real data.
-[HERE](assets/images/bonusinitalscreen.PNG)
+![Inital Screen](assets/images/bonusinitalscreen.PNG)
 
-- After entering a correct data set, you will recieve feedback stating that your data is valid.
-[HERE](assets/images/bonusp1.PNG)
+- After entering a correct data set, you will recieve feedback stating that your data is valid. This will update in the excel file.
+![Bonus Part1](assets/images/bonusp1.PNG)
 
-- Then you will be prompted to enter labour data with a set of instructions.
-[HERE](assets/images/bonusp2.PNG)
+- Then you will be prompted to enter labour data with a set of instructions. 
+![Bonus Part 2](assets/images/bonusp2.PNG)
 
-- After entering a correct labour data set, you will recieve feedback that your data is valid.
-[HERE](assets/images/bonuslabourvalid.PNG)
+- After entering a correct labour data set, you will recieve feedback that your data is valid. This will update in the excel file.
+![Bonus Labour Valid](assets/images/bonuslabourvalid.PNG)
 
 - Furthermore, you're total sales will be tallied then your labour will be averaged and displayed to you.
-[HERE](assets/images/bonusp3.PNG)
+![Bonus Part 3](assets/images/bonusp3.PNG)
 
 - You will then be prompted to answer 4 Y/N questions which will help calculate your bonus.
-[HERE](assets/images/bonusp4.PNG)
+![Bonus Part 4](assets/images/bonusp4.PNG)
 
 - Finally, your bonus will be display to you.
-[HERE](assets/images/bonusp5.PNG)
+![Bonus Part 5](assets/images/bonusp5.PNG)
+
+### Google Sheets File
+- I have connected Google Sheets through the gspread import, this was to allow the managers to refer back to their sales and labour they have inputted into the calculator.
+
+![Bonus Google Sheet](assets/images/bonusgooglesheet.PNG)
+
+![Bonus2 Google Sheet][assets/images/bonusworksheets.PNG]
+
+### Interactibility
+- There is only one button that can be pressed, everything else is purely based through the keyboard.
+- The "Run Program" button is built into Code Institutes Heroku Terminal.
+- WASD123 Keys and the "Enter" key are the only keys needed.
+
