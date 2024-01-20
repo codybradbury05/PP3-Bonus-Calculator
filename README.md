@@ -101,3 +101,15 @@
 - This function takes the labour data and sales data. If the labour data average is higher than 21.0 then there is no bonus.
 - However if is lower than 21.0 a series of questions is asked and a percentage of labour is taken away depending on the answer to the questions.
 - It will then display the total bonus they will recieve for the period.
+
+## 5. Testing
+
+#### 5.1 Manual testing
+
+| Test Num | Test                                                              | Expected Result                                                                                                  | Correct Outcome |
+| -------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | --------------- |
+| 1        | Enter valid sales data.                                           | Enter 4 integers, which should return validation from the terminal.                                              | Yes             |
+| 2        | Enter invalid sales data.                                         | Enter 4 integers/strings incorrectly, which should return an error message and ask to reinput data.              | Yes             |
+| 3        | Enter valid labour data.                                          | Enter 4 integers, which should return validation from the terminal.                                              | Yes             |
+| 4        | Enter invalid labour data.                                        | Enter 4 integers/strings incorrectly, which should return an error message and ask to reinput data.              | Yes             |
+| 5        | Answer Y/N to different questions and receive the correct result. | Enter Y/N to different questions and receive the correct amount of bonus in comparison to the answered questions | Yes             |
