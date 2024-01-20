@@ -119,3 +119,14 @@
 - I checked to see if this deployed to heroku, which can be seen [Here](assets/images/bonusinitalscreen.PNG)
 - I checked to see if the terminal was responsive. ![ResponsiveMockup](assets/images/bonusresponsive.PNG)
 - I also checked lighthouse to see if the terminal met the standards.![Lighthousetesting](assets/images/bonuslighthouse.PNG)
+
+### Bugs
+
+- I encountered only one bug during the development of my code, everything else was smooth sailing. The bug that was encountered was a gspread library error which was caused by me inputting the incorrect parameter on the function call.
+
+### Future Development
+
+In the future I would be able to add the folowing:
+- Ability to create a full spreadsheet that display all information about their bonus,sales,labour for managers.
+- Create a GUI for a more enhanced user experience.
+- Be able to stop the code without having to run through it.
