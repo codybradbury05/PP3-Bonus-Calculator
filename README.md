@@ -56,10 +56,48 @@
 
 ![Bonus Google Sheet](assets/images/bonusgooglesheet.PNG)
 
-![Bonus2 Google Sheet][assets/images/bonusworksheets.PNG]
+![Bonus2 Google Sheet](assets/images/bonusworksheets.PNG)
 
 ### Interactibility
 - There is only one button that can be pressed, everything else is purely based through the keyboard.
 - The "Run Program" button is built into Code Institutes Heroku Terminal.
 - WASD123 Keys and the "Enter" key are the only keys needed.
 
+## Functions 
+
+- Within this section will be the list of all the functions used to make the calculator work.
+
+### get_period_sales()
+- This functions asks the user for 4 figures of data which is their sales data for each week.
+- It will print a set of instructions i.e must be 4 sets of data, must be a integer, must be seperated by a comma.
+
+### validate_sales(values)
+- This functions validates the users input.
+- The function requires only 4 figures seperated by a comma and no more or less than 4.
+- If there is more than 4 then an error message will be supplied and the user will be asked to reenter the data.
+
+### update_sales_worksheet(data)
+- This function takes the users input and enters it into a new row on the Google Sheet on the sales worksheet.
+
+### total_sales(sales_data)
+- This function takes the users input and tallys the total sales for the period.
+
+### get_labour_data()
+- This functions asks the user for 4 figures of data which is their labour data for each week.
+- It will print a set of instructions i.e must be 4 sets of data, must be a integer, must be seperated by a comma.
+
+### validate_labour(values)
+- This functions validates the users input.
+- The function requires only 4 figures seperated by a comma and no more or less than 4.
+- If there is more than 4 then an error message will be supplied and the user will be asked to reenter the data.
+
+### update_labour_worksheet(labour_data)
+- This function takes the users input and enters it into a new row on the Google Sheet in the labour worksheet.
+
+### average_labour(labour_data)
+- This functions takes the average of the labour data and uses the statistics library to calculate the mean.
+
+### calculate_bonus(labour_data, sales_data)
+- This function takes the labour data and sales data. If the labour data average is higher than 21.0 then there is no bonus.
+- However if is lower than 21.0 a series of questions is asked and a percentage of labour is taken away depending on the answer to the questions.
+- It will then display the total bonus they will recieve for the period.
