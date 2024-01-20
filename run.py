@@ -183,7 +183,6 @@ def calculate_bonus(labour_data, sales_data):
         total_bonus = sum(sales_data) * 0.0025
         print(f"Your total bonus is {total_bonus}!")
     elif bonus_deductions == 4:
-        total_bonus = sum(sales_data) * 0.01
         print("Sorry you haven't hit your bonus :(")
 
 def main():
