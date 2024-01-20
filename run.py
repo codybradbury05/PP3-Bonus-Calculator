@@ -35,11 +35,12 @@ def get_period_sales():
         time.sleep(1)
 
         sales_input = input("Enter your weekly sales here:\n")
-
+        time.sleep(1)
         sales_data = sales_input.split(",")
 
         if validate_sales(sales_data):
-            print("Weekly Sales data valid :)")
+            time.sleep(1)
+            print("Weekly Sales data valid :)\n")
             break
 
     return sales_data
