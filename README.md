@@ -180,3 +180,17 @@ In the future I would be able to add the folowing:
     - Copy the JSON into the workspace
     - Take the email from the JSON and share it into your google sheet
     - run "pip3 install gspread" in the terminal.
+
+### Credits
+
+## Code Institute
+
+- Love Sandwiches Walkthrough for helping me with my validation and adding to a google sheet. [Love Sandwiches](https://github.com/Code-Institute-Solutions/love-sandwiches-p5-sourcecode)
+
+## TabletoMarkdown
+
+- tabletomarkdown.com for helping convert my table into markdown. [tabletomarkdown.com](https://tabletomarkdown.com/generate-markdown-table/)
+
+## Time Module Python
+
+- Helped me delay the running of the program to allow for a better user experience[python.org](https://docs.python.org/3/library/time.html)
